@@ -1,0 +1,12 @@
+{
+    "display_name": "Playable YouTube Videos",
+    "loading_order": 150,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "",
+    "author": "Cohee1207",
+    "version": "1.0.0",
+    "homePage": "https://github.com/Cohee1207/SillyTavern-YouTube-Videos",
+    "auto_update": true
+}
