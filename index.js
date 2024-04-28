@@ -31,7 +31,7 @@ function replaceYouTubeVideos(text) {
     return text.replace(regex, (_match, _protocol, _domain, _path, id) => {
         console.log('[ST-YT] Found YouTube video:', id);
         const videoElement = document.createElement('video');
-        videoElement.src = `/api/plugins/youtube/play/https://youtu.be/${id}`;
+        videoElement.src = `/api/plugins/youtube/play/${encodeURIComponent(`https://youtu.be/${id}`)}`;
         videoElement.controls = true;
         videoElement.autoplay = true;
         videoElement.style.width = '100%';
@@ -73,7 +73,7 @@ async function getVideoInfo(videoId) {
         return INFO_CACHE.get(videoId);
     }
 
-    const response = await fetch(`/api/plugins/youtube/info/https://youtu.be/${videoId}`);
+    const response = await fetch(`/api/plugins/youtube/info/${encodeURIComponent(`https://youtu.be/${videoId}`)}`);
     const data = await response.json();
     INFO_CACHE.set(videoId, data);
     return data;
