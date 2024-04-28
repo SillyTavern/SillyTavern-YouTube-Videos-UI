@@ -33,7 +33,6 @@ function replaceYouTubeVideos(text) {
         const videoElement = document.createElement('video');
         videoElement.src = `/api/plugins/youtube/play/${encodeURIComponent(`https://youtu.be/${id}`)}`;
         videoElement.controls = true;
-        videoElement.autoplay = true;
         videoElement.style.width = '100%';
         videoElement.style.height = 'auto';
         return videoElement.outerHTML;
