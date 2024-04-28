@@ -1,6 +1,6 @@
 # Playable YouTube videos
 
-**Requires a server plugin to function! Install it from here: [SillyTavern-YouTube-Videos-Server](https://github.com/Cohee1207/SillyTavern-YouTube-Videos-Server)**
+**Requires a server plugin to function! Install it from here: [SillyTavern-YouTube-Videos-Server](https://github.com/SillyTavern/SillyTavern-YouTube-Videos-Server)**
 
 Automatically replaces links to YouTube videos that have `@` before them with HTML `<video>` tags in chat messages.
 
